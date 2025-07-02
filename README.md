@@ -31,18 +31,6 @@ This is **not a general-purpose voice recognition tool** - it is **personalized*
 ├── requirements.txt # Python package dependencies
 ├── .gitignore # To exclude build files and logs
 
-Shakthi_1.1v/
-├── GUI_Voice_auth.py # Main GUI interface
-├── record_pass.py # Used to record your voice samples
-├── verify_pass.py # Auth engine using DTW + MFCC
-├── Voice_test.wav # Voice input placeholder (used at runtime)
-├── samples_folder/ # Stores your personal reference samples
-│ └── .gitkeep # Keeps the folder in version control
-├── Shakthi_1.1.spec # PyInstaller spec file to build .exe
-├── requirements.txt # Python package dependencies
-├── .gitignore # To exclude build files and logs
-
-
 ---
 
 ## ⚙️ Setup Instructions
