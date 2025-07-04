@@ -39,33 +39,33 @@ This is **not a general-purpose voice recognition tool** - it is **personalized*
 ```bash
 git clone https://github.com/Arvind-NITCG/Shakthi_1.1v.git
 cd Shakthi_1.1v
-
+```
 ---
-
 # Create Conda Environment (Recommended)
  ->We recommend using a Conda environment to manage dependencies, especially if you plan to build the `.exe` or run the full voice pipeline (librosa, scipy, noisereduce)
     However, using `pip` in a virtualenv or system Python also works.
 
  -> **Miniconda Installation (Recommended for Developers)**
-
     We recommend using Miniconda to create an isolated Python environment for this project. It helps prevent package conflicts and makes it easier to manage dependencies like `scipy` and `librosa`.
-
-    Download Miniconda here:  
+    
+   Download Miniconda here:  
    👉 https://docs.conda.io/en/latest/miniconda.html
-
-     create a virtual environment in conda like:
+    create a virtual environment in conda like:
        conda create -n shakthi_env python=3.11
        conda activate shakthi_env
 
 # Install Dependencies
+```
     pip install -r requirements.txt
-
-    Having issues installing packages like `scipy` or `sounddevice` on Windows?
+```
+   Having issues installing packages like `scipy` or `sounddevice` on Windows?
     You can download pre-built `.whl` files from Gohlke's Unofficial Binaries:
      https://www.lfd.uci.edu/~gohlke/pythonlibs/
 
-     Install them using:
+   Install them using:
+     ```
      pip install path/to/downloaded_file.whl
+     ```
 
 # Setting Up Your Voice
   Before running the GUI, you must register your voice samples.
