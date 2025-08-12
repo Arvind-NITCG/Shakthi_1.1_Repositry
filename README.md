@@ -1,6 +1,6 @@
 # Shakthi_1.1v — GUI-Based Voice Authentication System
 
-Shakthi_1.1v is a **Python-powered voice authentication system** that protects access to your system using **your unique voice**. It captures a voice input, compares it to stored samples using **MFCC + Dynamic Time Warping**, and grants access only when your voice matches.
+Shakthi_1.1v is a **Python-powered voice authentication system** that protects access to your system using **your unique voice**. It captures a voice input, compares it to stored samples using **MFCC + Dynamic Time Warping**, and grants access only when your voice matches.Made by Arvind-NITCG
 
 This is **not a general-purpose voice recognition tool** - it is **personalized**. It's built to recognize **you**, and only you.
 
