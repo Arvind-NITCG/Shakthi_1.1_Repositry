@@ -3,6 +3,9 @@ from tkinter import messagebox
 import threading
 import time
 import os
+import sounddevice as sd
+import pyttsx3
+from verify_pass import run_ath
 
 def show_splash():
     splash = tk.Tk()
@@ -19,10 +22,7 @@ def show_splash():
 
     splash.after(3000, splash.destroy)  # auto close after 3 sec
     splash.mainloop()
-
-
-import sounddevice as sd
-import soundfile as sf
+    
 
 try:
     sd.query_devices()
@@ -32,16 +32,11 @@ except Exception as e:
     time.sleep(3)
 
 try:
-    import pyttsx3
     engine = pyttsx3.init()
 except Exception as e:
     print("⚠️ pyttsx3 init failed:", e)
     engine = None
-
-from verify_pass import run_ath
-
-fs = 44100
-record_duration = 4
+    
 safe_exit_pin = ""# PLACE YOUR SAFE EXIT PIN HERE
 
 class VoiceAuthGUI:
@@ -54,7 +49,7 @@ class VoiceAuthGUI:
         self.auth_active = True
         self.auth_loop_started = False
 
-        self.label = tk.Label(master, text="🔐 Shakthi 1.1 - Voice Protected", font=("Helvetica", 18), bg="black", fg="white")
+        self.label = tk.Label(master, text=" Shakthi 1.1 - Voice Protected", font=("Helvetica", 18), bg="black", fg="white")
         self.label.pack(pady=40)
 
         self.wave_label = tk.Label(master, text="🎤", font=("Helvetica", 60), bg="black", fg="#00ffe4")
