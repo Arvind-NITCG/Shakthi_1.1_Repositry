@@ -91,7 +91,7 @@ cd Shakthi_1.1v
 
 
 
-# Once COST_THRESHOLD and Safe-exit pin is made ready , Run th GUI
+# Once COST_THRESHOLD and Safe-exit pin is made ready , Run the GUI
 ```bash
   python GUI_Voice_auth.py
 ```
